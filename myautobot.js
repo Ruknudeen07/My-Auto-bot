@@ -8,18 +8,6 @@ const messagecontainer= document.querySelector(".messagecontainer");
 function getRandom(from,to){
    return Math.floor(Math.random()* (to-from) + from);
    }
-document.addEventListener('DOMContentLoaded',function() {
- const ooo = document.getElementById("ooo");
- ooo.addEventListener('click',function(){
- const maxWidth= window.innerWidth - ooo.elementWidth;
- const maxHeight = window.innerWidth - ooo.elementHeight;
- const randomX = math.floor(math.random() * maxWidth);
- const randomY = math.floor(math.random() * maxHeight);
- ooo.style.left= `${randomX}px`;
- ooo.style.top= `${randomY}px`;
- });
-})
-
 form.addEventListener('submit',function(event){
    event.preventDefault();
    sendmessage();
